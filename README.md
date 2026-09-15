@@ -29,7 +29,8 @@ This project is an end-to-end SQL analysis of an e-commerce company's sales data
 | 10 | Monthly revenue growth (MoM %) | LAG() window function |
 
 ## 🔍 Key Insights (fill this in with your actual results)
-- Top customer generated ₹X in total revenue
+- ## 🔍 Key Insights
+- Top customer (Ananya Chaudhary) generated ₹672,928.82 in total revenue
 - [Category name] has the highest profit margin (~X%)
 - Cash on Delivery has the highest cancellation rate (~X%)
 - [State name] leads in revenue
