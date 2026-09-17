@@ -31,4 +31,29 @@ This project is an end-to-end SQL analysis of an e-commerce company's sales data
 ## 🔍 Key Insights
 - Top customer (Ananya Chaudhary) generated ₹672,928.82 in total revenue
 - [Fill in: which cohort month had the strongest retention, and what % remained by which later month]
-- [Fill in: how many
+- [Fill in: how many customers landed in "Champion" vs "At Risk" segments]
+- [Fill in: which category/subcategory has the highest profit margin (~X%), and how it compares to the highest-revenue category]
+- [Fill in: which discount band drives the highest total profit, even if it isn't the band with the highest margin %]
+- [State name] leads in revenue
+- [Month] saw the highest MoM growth (X%)
+
+## 📁 Project Structure
+```
+SQL_Project_ECommerce_analysis/
+├── data/           → raw CSV files
+├── schema/         → table creation scripts
+├── queries/        → 10 business question SQL files
+├── results/        → exported outputs / screenshots
+└── README.md
+```
+
+## 🚀 How to Run
+1. Clone the repo
+2. Run `schema/create_tables.sql` to create the database structure
+3. Import CSVs from the `data/` folder into their respective tables
+4. Run any query from the `queries/` folder to see results
+
+## 👤 Author
+**Mohd Sami** — Aspiring Data Analyst  
+🔗 [LinkedIn](https://www.linkedin.com/in/mohdsami-data)  
+📧 mohdsami.workk@gmail.com
