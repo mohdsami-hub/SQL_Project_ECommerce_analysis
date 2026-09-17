@@ -9,7 +9,7 @@ This project is an end-to-end SQL analysis of an e-commerce company's sales data
 - **orders.csv** — 6000+ order transactions (revenue, profit, discount, payment method, order status)
 
 ## 🛠️ Tools Used
-- MySQL / PostgreSQL (SQL queries)
+- PostgreSQL
 - VS Code with SQL extension
 - Git & GitHub for version control
 
@@ -18,8 +18,8 @@ This project is an end-to-end SQL analysis of an e-commerce company's sales data
 | # | Business Question | SQL Concepts Used |
 |---|---|---|
 | 1 | Top 20 customers by revenue & profit (CLV) | JOIN, GROUP BY, SUM |
-| 2 | Monthly cohort retention analysis | CTE, DATE_FORMAT, self-join logic |
-| 3 | RFM customer segmentation | Window functions (NTILE), CASE |
+| 2 | Monthly cohort retention analysis | CTE, TO_CHAR, JOIN, COUNT(DISTINCT) |
+| 3 | RFM customer segmentation | CTE, NTILE() window function, CASE WHEN |
 | 4 | Category/subcategory profitability | Aggregation, derived metrics |
 | 5 | Discount band impact on profit margin | CASE (binning), AVG |
 | 6 | Order status / fulfillment funnel | Window functions (SUM OVER) |
@@ -28,31 +28,9 @@ This project is an end-to-end SQL analysis of an e-commerce company's sales data
 | 9 | Inventory risk (stock vs sales velocity) | LEFT JOIN, COALESCE |
 | 10 | Monthly revenue growth (MoM %) | LAG() window function |
 
-## 🔍 Key Insights (fill this in with your actual results)
-- ## 🔍 Key Insights
+## 🔍 Key Insights
 - Top customer (Ananya Chaudhary) generated ₹672,928.82 in total revenue
+- [Fill in: which cohort month had the strongest retention, and what % remained by which later month]
+- [Fill in: how many customers landed in "Champion" vs "At Risk" segments]
 - [Category name] has the highest profit margin (~X%)
-- Cash on Delivery has the highest cancellation rate (~X%)
-- [State name] leads in revenue
-- [Month] saw the highest MoM growth (X%)
-
-## 📁 Project Structure
-```
-SQL_Project_ECommerce_analysis/
-├── data/           → raw CSV files
-├── schema/         → table creation scripts
-├── queries/        → 10 business question SQL files
-├── results/        → exported outputs / screenshots
-└── README.md
-```
-
-## 🚀 How to Run
-1. Clone the repo
-2. Run `schema/create_tables.sql` to create the database structure
-3. Import CSVs from the `data/` folder into their respective tables
-4. Run any query from the `queries/` folder to see results
-
-## 👤 Author
-**Mohd Sami** — Aspiring Data Analyst  
-🔗 [LinkedIn](https://www.linkedin.com/in/mohdsami-data)  
-📧 mohdsami.workk@gmail.com
+- Cash
