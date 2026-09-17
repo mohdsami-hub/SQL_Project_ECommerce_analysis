@@ -20,8 +20,8 @@ This project is an end-to-end SQL analysis of an e-commerce company's sales data
 | 1 | Top 20 customers by revenue & profit (CLV) | JOIN, GROUP BY, SUM |
 | 2 | Monthly cohort retention analysis | CTE, TO_CHAR, JOIN, COUNT(DISTINCT) |
 | 3 | RFM customer segmentation | CTE, NTILE() window function, CASE WHEN |
-| 4 | Category/subcategory profitability | Aggregation, derived metrics |
-| 5 | Discount band impact on profit margin | CASE (binning), AVG |
+| 4 | Category/subcategory profitability | JOIN, multi-column GROUP BY, derived metric (margin %) |
+| 5 | Discount band impact on profit margin | CASE WHEN (binning), GROUP BY on derived column |
 | 6 | Order status / fulfillment funnel | Window functions (SUM OVER) |
 | 7 | Payment method behavior (cancellation/return rate) | Conditional aggregation |
 | 8 | Geographic revenue analysis by state | RANK(), CTE |
@@ -31,6 +31,4 @@ This project is an end-to-end SQL analysis of an e-commerce company's sales data
 ## 🔍 Key Insights
 - Top customer (Ananya Chaudhary) generated ₹672,928.82 in total revenue
 - [Fill in: which cohort month had the strongest retention, and what % remained by which later month]
-- [Fill in: how many customers landed in "Champion" vs "At Risk" segments]
-- [Category name] has the highest profit margin (~X%)
-- Cash
+- [Fill in: how many
